@@ -5,27 +5,25 @@
     box-sizing: border-box;
     font-family: "Outfit", serif;
 }
-
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
     background-image: url("resources/Background_image.svg");
     background-color: #121826;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 10px;
-
+    margin-top: 20px;
 }
 h1{
     width:450px;
-    max-width: 100%;
     text-align: center;
 }
-p{
+.heading>p{
     color: #9DA3AE;
     padding: 10px 0 20px;
+    text-align: center;
 }
 h2{
     font-size: 1.25rem;
@@ -38,6 +36,7 @@ h2{
 .container {
     display: flex;
     gap: 30px;
+    margin-bottom: 20px;
 }
 .card-1,.card-2,.card-3{
     background-color: #212936;
@@ -85,20 +84,20 @@ img{
 .author-info {
     font-size: 14px;
     text-align: center;
-    margin-top: 16px;
     color: rgb(55, 65, 81);
 }
 .author-info a {
     text-decoration: none;
 }
 @media screen and (max-width: 1024px) {
-    body{
-        height: 100vh
+    h1{
+        width: 350px;
     }
     .container {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        flex-grow: 1;
     }
 }
+
